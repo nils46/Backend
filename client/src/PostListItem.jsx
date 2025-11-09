@@ -7,7 +7,7 @@ function PostListItem({ post }) {
   const handleUpvote = async () => {
     try {
       // Send the request to the server
-      await fetch(`http://localhost:8080/api/posts/${post.id}/upvote`, {
+      await fetch(`https://learnato-server.onrender.com/api/posts/${post.id}/upvote`, {
         method: 'POST',
       });
       
