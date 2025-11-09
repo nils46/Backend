@@ -15,7 +15,7 @@ You can access the live, deployed application here:
 
 ---
 
-## ✨ Features
+## ✨ Features are
 
 ### Core MVP
 * **Create Posts:** Users can add new questions or topics.
