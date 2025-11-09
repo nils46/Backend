@@ -14,7 +14,7 @@ function PostPage() {
   const fetchPost = useCallback(async () => {
     setLoading(true);
     try {
-      const response = await fetch(`http://localhost:8080/api/posts/${id}`);
+      const response = await fetch(`https://learnato-server.onrender.com/api/posts/${id}`);
       const data = await response.json();
       setPost(data);
     } catch (error) {
@@ -51,7 +51,7 @@ function PostPage() {
     if (!replyContent) return;
 
     try {
-      await fetch(`http://localhost:8080/api/posts/${id}/reply`, {
+      await fetch(`https://learnato-server.onrender.com/api/posts/${id}/reply`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ content: replyContent, author: 'User' }),

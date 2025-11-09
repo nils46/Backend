@@ -19,7 +19,7 @@ function CreatePostForm({ onPostCreated, onCancel }) {
     }
 
     try {
-      const response = await fetch('http://localhost:8080/api/posts', {
+      const response = await fetch('https://learnato-server.onrender.com/api/posts', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

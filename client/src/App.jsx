@@ -13,7 +13,7 @@ function App() {
   const fetchPosts = async () => {
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:8080/api/posts');
+      const response = await fetch('https://learnato-server.onrender.com/api/posts');
       const data = await response.json();
       setPosts(data);
     } catch (error) {
